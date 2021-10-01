@@ -1,4 +1,4 @@
-
+﻿
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -10,9 +10,10 @@ public class Bank
 		var map = new Dictionary<int, string>();
 		var map1 = new Dictionary<int, int>();
 		int avlAmount = 0;
+		Console.WriteLine("Welcome 😀");
 		while (true)
 		{
-			Console.WriteLine("1. Create Account\n2. Deposit Amount\n3. Withdraw Amount\n4. Transfer Amount\n5. Transaction History\n");
+			Console.WriteLine("1. Create Account\n2. Deposit Amount\n3. Withdraw Amount\n4. Transfer Amount\n5. Transaction History\n6. Logout\n");
 			Console.WriteLine("Enter option : ");
 			int n = Convert.ToInt32(Console.ReadLine());
 			int acNum = 0;
@@ -144,6 +145,11 @@ public class Bank
 				Console.WriteLine("Please Enter a valid option");
 				
 			}
+			if(n == 6)
+            {
+				Console.WriteLine("Thank you for using our application 😀 \n Have a great day!! 🎉");
+				break;
+            }
 
 
 		}
